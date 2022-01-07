@@ -17,7 +17,7 @@
                              th:class="${asignacion.empleado == null} ?
                                     'card text-center text-white bg-danger mb-3' :
                                     (${asignacion.fechaInicio == null} ?
-                                        'card text-center text-white bg-secondary-mb-3' :
+                                        'card text-center text-white bg-secondary mb-3' :
                                         (${asignacion.fechaFin == null} ?
                                             'card text-center text-white bg-primary mb-3' :
                                             'card text-center text-white bg-success mb-3'))">
@@ -52,7 +52,7 @@
                 </div>
                 <footer>
                     <div class="container">
-                        <a class="btn-outline-secondary"
+                        <a class="btn btn-outline-secondary"
                            th:href="@{/cliente/monitorear/}"
                            role="button">Regresar
                         </a>
